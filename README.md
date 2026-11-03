@@ -1,6 +1,6 @@
 # AINiangAssets
 
-九位 AI 同人角色的 Q 版原始立绘、二十段大肥鱼透明动画与角色介绍。此版本按文件范围精简，旧素材仍可从 Git 历史检索。
+九位 AI 同人角色的 Q 版原始立绘、每位二十段透明动画（共180段）与角色介绍。立绘保持当前九张上游 Chibi 原图；大肥鱼使用指定 dsh-pet 视频，其他八位恢复本仓库先前版本的原始视频。
 
 ## 角色
 
@@ -47,15 +47,32 @@ GLM 使用上游 GLM-Fox-Chibi，与现有黑狐身份对应。所有立绘直�
 19. [原地左转奔跑](videos/deepseek/原地左转奔跑.webm)
 20. [原地敲击桌面互动](videos/deepseek/原地敲击桌面互动.webm)
 
+## 其他八位角色的视频
+
+从删除前的提交 [`57ed611`](https://github.com/hodokoshitsunagu-arch/AINiangAssets/commit/57ed61176dbd67042658b3ee4bbfbc984a06bda2) 原样恢复，共160段；保留原文件名及内容，没有重新生成或转码。每个目录仍是旧版首批按文件名字母序选出的20段，而非完整动作集。
+
+| 角色 | 视频目录 | 数量 |
+|---|---|---:|
+| Claude · 圣女果 | [claude](videos/claude/) | 20 |
+| GPT · 小龙女 | [gpt](videos/gpt/) | 20 |
+| Gemini · 哈基米 | [gemini](videos/gemini/) | 20 |
+| Grok · 大小姐 | [grok](videos/grok/) | 20 |
+| Qwen · 千金金 | [qwen](videos/qwen/) | 20 |
+| Kimi · 小狐狸 | [kimi](videos/kimi/) | 20 |
+| GLM · 嘎拉吗 | [glm](videos/glm/) | 20 |
+| MiniMax · 小田螺 | [minimax](videos/minimax/) | 20 |
+
+这些视频沿用旧版仓库记录的 Feiyu `productions/ai-pets-200/runs/<id>/webm/` 来源，不属于 dsh-pet 上游视频。本次恢复不意味着旧动画已按当前原始 Chibi 立绘重新制作；动作质量与新立绘的一致性仍需人工审阅。
+
 ## 上游来源与署名
 
 - 立绘：[Apprentice-Geo/AI-Fanworks](https://github.com/Apprentice-Geo/AI-Fanworks)，作者目录 ApprenTice，`AI-Girls-and-Chibis`。固定版本 `80d0cd91dc188a6950243e901b45dc5f5d26f029`。图像按 **CC BY-NC-SA 4.0** 使用，保留署名、来源，非商业使用，改编同协议。许可：[上游声明](https://github.com/Apprentice-Geo/AI-Fanworks/blob/80d0cd91dc188a6950243e901b45dc5f5d26f029/ApprenTice/AI-Girls-and-Chibis/README.md) · [许可全文](https://creativecommons.org/licenses/by-nc-sa/4.0/)。
 - 上游注明参考 ZipZipPipe《大 AI 与小 AI 们》及动态；DeepSeek 鲸鱼娘由上善无形原创、ZipZipPipe 二次设计，本目录立绘为 ApprenTice 基于该视觉的再创作。其余参考内容的权利按原作者声明。
-- 动画：[PC2005-cloud/dsh-pet](https://github.com/PC2005-cloud/dsh-pet)，固定版本 `31aa345b11a18fc16d5fd35c42b8b9441071170e`；保留该仓库 MIT 许可声明如下。此许可不被解释为覆盖独立第三方角色权利，也不覆盖上述 CC BY-NC-SA 立绘。
+- 大肥鱼动画：[PC2005-cloud/dsh-pet](https://github.com/PC2005-cloud/dsh-pet)，固定版本 `31aa345b11a18fc16d5fd35c42b8b9441071170e`；保留该仓库 MIT 许可声明如下。此许可不被解释为覆盖独立第三方角色权利，也不覆盖上述 CC BY-NC-SA 立绘。
 
 ## 文件溯源
 
-29个媒体文件均核对上游 Git blob；以下记录原始地址与 SHA-256。媒体完整性检查不等于逐帧动画与美术人工验收。
+以下29个媒体文件（9张立绘、20段大肥鱼视频）均核对上游 Git blob，记录原始地址与 SHA-256。其余160段恢复视频逐文件对照删除前提交的 Git blob，保持完全一致。媒体完整性检查不等于逐帧动画与美术人工验收。
 
 | 文件 | 上游原文件 | SHA-256 |
 |---|---|---|
